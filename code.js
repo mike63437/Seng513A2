@@ -5,10 +5,10 @@ function getStats(txt) {
 	
 	function getNChars()
 	{
-		var totalChars = 0;
+		var totalChars = -1;
 		for (var i in txt.split('\n'))
 		{
-			totalChars += txt.split('\n')[i].length;
+			totalChars += txt.split('\n')[i].length +1;
 		}
 		return totalChars;
 	}	
